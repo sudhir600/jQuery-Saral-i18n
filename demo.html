@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <title>jQuery saral i18n example</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" defer></script>
+	<script type="text/javascript" src="js/saral-i18n.js" defer></script>
+</head>
+<body>
+    <div id="main">
+		<div class="lng">
+		<span>Change Language</span>
+			<select id="lang">
+				<option value="en">en</option>
+				<option value="hn">hn</option>
+				<option value="de">de</option>
+				<option value="fr">fr</option>
+				<option value="ru">ru</option>
+			</select>
+		</div>
+		<br />
+		<table>
+			<tr><td><div i18n="divTxt">text from english</div></td></tr>
+			<tr><td><span i18n="spanTxt">text from english</span></td></tr>
+		</table>
+    </div>
+</body>
+</html>

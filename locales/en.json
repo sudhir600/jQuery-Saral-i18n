@@ -1,0 +1,15 @@
+{
+	"divTxt": 		"This is a simple <b>english</b> text appearing in div.",
+	"spanTxt": 		"This is a simple <b>english</b> text appearing in span",
+	"headingTxt": 	"This is a simple <b>english</b> text appearing in heading",
+	"tdTxt": 		"This is a simple <b>english</b> text appearing in table td",
+	"pTxt": 		"This is a simple <b>english</b> text appearing in paragraph",
+	"buttonTxt": 	"This is a simple <b>english</b> text appearing in button",
+	"inputTxt": 	"This is a simple <b>english</b> text appearing in input value",
+	"inputPlchdr": 	"This is a simple <b>english</b> text appearing in placeholder",
+	"optionTxt": 	"This is a simple <b>english</b> text appearing in nex to option",
+	"radioTxt": 	"This is a simple <b>english</b> text appearing in next to radio",
+	"checkboxTxt": 	"This is a simple <b>english</b> text appearing in next to checkbox",
+	"errorTxt": 	"This is a simple <b>english</b> text appearing as error",
+	"successTxt": 	"This is a simple <b>english</b> text appearing as success"
+}
