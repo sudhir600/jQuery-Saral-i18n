@@ -13,7 +13,7 @@ Note- this is very easy plugin for localization using jQuery. You need to spen o
 
 <h3>uses</h3>
 place i18n="key" in any element just like this.<br /> or 
-you can call **i18n_placeholder="key"** for input placeholder.
+you can call i18n_placeholder="key" for input placeholder.
 <br />
 <pre>
 
@@ -29,6 +29,12 @@ you can call **i18n_placeholder="key"** for input placeholder.
 	<textarea i18n="divTxt" rows="4" cols="45"></textarea>
 	<div i18n="divTxt">text from english</div>
 	<span i18n="spanTxt">text from english</span>
-  
 </pre>
 
+<h2>Author</h2>
+<ul>
+ <li>Sudhir K Gupta</li>
+</ul>
+<br /><br />
+
+<b>Note - If you think that something need to be change, feel free to send pull request. I will merge into master.</b>
