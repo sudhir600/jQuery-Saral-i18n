@@ -2,6 +2,15 @@
 
 var fallBackLocale = 'en';
 
+$('document').ready(function(){
+	bindAll();	
+	$('.lng select').change(function(){
+		var locale = $(this).find("option:selected").val();
+		localStorage.setItem('locale', locale);
+		bindAll();
+	})
+})
+
 function init_i18n(lng){
 	if(!lng || lng == ''){
 		lng = fallBackLocale;
@@ -10,68 +19,45 @@ function init_i18n(lng){
 		type:'GET',
 		url: "locales/" + lng + ".json",
 	}).done(function( data ) {
-		console.log(data);
 		var dataKey  = 'i18n';
+		var placeholderkey = 'i18n_placeholder';
+		
 		$('*[' + dataKey + ']').each(function(e){
 			var key = $(this).attr(dataKey);
 			var value = data[key];
-			$(this).html(value);
+			var node = $(this)[0]['nodeName'];
+			if(node == 'INPUT' || node == 'TEXTAREA'){
+				var nodeType = $(this)[0]['type'];
+				nodeType == 'text' || 'button' || 'radio' || 'checkbox'	? $(this).val(value) : '';
+			} else if(node == 'OPTION'){
+				$(this).attr('val', value);
+				$(this).html(value);
+			} else{
+				$(this).html(value);
+			}
 		});
 		
-		var placeholderkey  = 'i18n_placeholder';
+		
+		var placeholderkey = 'i18n_placeholder';
 		$('*[' + placeholderkey + ']').each(function(e){
 			var key = $(this).attr(placeholderkey);
 			var value = data[key];
 			$(this).attr("placeholder", data[key]);
 		});
+		
+		
 	}).fail(function(error){
-		//load fallback if locale file doesn't exists.
-		console.log('fail fallBackLocale is' + fallBackLocale); 
-		init_i18n(fallBackLocale);
-		setTimeout(function(){
-			console.log('settime run');
-			updateLngDropDown(fallBackLocale);
-		},2000);
-		//console.log(error); 
+		console.log(error); 
 	});
 }
 function bindAll(){
-	var locale = getLocale();	
+	var locale = getLocale();
 	updateLngDropDown(locale);
 	init_i18n(locale);
 }
 
-$('document').ready(function(){
-	bindAll();
-	// var existingLocale = getLocale();	
-	//updateLngDropDown(existingLocale);
-	// init_i18n(existingLocale);
-	
-	$('.lng select').change(function(){
-		console.log('call me');
-		var locale = $(this).find("option:selected").val();
-		localStorage.setItem('locale', locale);
-		//$(this).find('option[value="'+locale+'"]').attr('selected', true);
-		bindAll();
-	})
-})
-
-
-window.addEventListener("storage", function (e) {
-		bindAll();
-		//console.log('called from LS change');
-		//var locale = getLocale();
-		//init_i18n(locale);
-		//updateLngDropDown(locale);
-		//console.log('local change detected');
-});
-
 function updateLngDropDown(locale){
-	$('document').on('load', function(){
-		alert("The paragraph was clicked.");
-		$('.lng select').find('option[value="'+locale+'"]').attr('selected', true);
-	});
-	
+	$('.lng select').find('option[value="'+locale+'"]').prop('selected', true);
 }
 
 function getLocale(){
@@ -79,4 +65,7 @@ function getLocale(){
 	return existingLocale != null ? existingLocale : fallBackLocale;
 }
 
+window.addEventListener("storage", function (e) {
+		bindAll();
+});
 console.log('jQuery-saral-i18n loaded');

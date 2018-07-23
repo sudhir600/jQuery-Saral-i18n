@@ -1,0 +1,18 @@
+{
+	"divTxt": 		"这是一个用中文出现的简单文字(div)",
+	"spanTxt": 		"这是一个用中文出现的简单文字(span)",
+	"headingTxt": 	"这是一个用中文出现的简单文字(heading)",
+	"tdTxt": 		"这是一个用中文出现的简单文字(td)",
+	"pTxt": 		"这是一个用中文出现的简单文字(para)",
+	"buttonTxt": 	"这是一个用中文出现的简单文字(button)",
+	"inputTxt": 	"这是一个用中文出现的简单文字(input)",
+	"inputPlchdr": 	"这是一个用中文出现的简单文字(input placeholder)",
+	"optionTxt": 	"这是一个用中文出现的简单文字(option)",
+	"radioTxt": 	"这是一个用中文出现的简单文字(radio)",
+	"checkboxTxt": 	"这是一个用中文出现的简单文字(checkbox)",
+	"errorTxt": 	"这是一个用中文出现的简单文字(error)",
+	"successTxt": 	"这是一个用中文出现的简单文字(success)",
+	"location1": 	"孟买",
+	"location2": 	"伦敦",
+	"textArea":		"我们的世界充满了各种奇观和美丽的地方。如果你曾经听过地球上的天堂这样的地方并且你喜欢旅行，我相信你会渴望了解它们并去那里。你有没有走出繁忙的都市生活？想法是什么？你想去一个气氛平静的地方，让你安心。"
+}

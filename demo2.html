@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <title>jQuery saral i18n example</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" defer></script>
+	<script type="text/javascript" src="js/saral-i18n.js" defer></script>
+</head>
+<body>
+    <div id="main">
+	
+	<input type="text" i18n="buttonTxt" i18n_placeholder="inputPlchdr">
+	<input type="radio" checked i18n="localtion2">
+	<input type="button" i18n="location1">
+	<input type="checkbox" i18n="location2">
+	<button i18n="buttonTxt"></button>
+	<select>
+	  <option selected i18n="location1"></option>
+	  <option i18n="location2"></option>
+	</select>
+	<br />
+	<br />
+	<textarea i18n="divTxt" rows="4" cols="45"></textarea>
+	<br />
+	<br />
+	data tags<br />
+		<div i18n="divTxt">text from english</div>
+		<span i18n="spanTxt">text from english</span>
+	</div>
+ </body>
+</html>

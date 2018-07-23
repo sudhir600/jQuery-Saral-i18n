@@ -10,18 +10,48 @@
 		<div class="lng">
 		<span>Change Language</span>
 			<select id="lang">
-				<option value="en">en</option>
-				<option value="hn">hn</option>
-				<option value="de">de</option>
-				<option value="fr">fr</option>
-				<option value="ru">ru</option>
+				<option value="en">English</option>
+				<option value="hn">Hindi</option>
+				<option value="zh">Chinese</option>
+				<option value="ru">Russian</option>
+				<option value="de">German</option>
 			</select>
 		</div>
 		<br />
-		<table>
+		<table cellpadding="2" cellspacing="0">
 			<tr><td><div i18n="divTxt">text from english</div></td></tr>
 			<tr><td><span i18n="spanTxt">text from english</span></td></tr>
+			<tr><td><h3 i18n="headingTxt"></h3></td></tr>
+			<tr><td><p i18n="pTxt"></p></td></tr>
+			<tr><td><button id="btn1" i18n="buttonTxt"></button></td></tr>
+			<tr><td><input type="text" value="" i18n_placeholder="inputPlchdr" /></td></tr>
+			<tr><td>
+					<span>Translation in options</span>
+					<select>
+					  <option selected i18n="location1"></option>
+					  <option  i18n="location2"></option>
+					</select>
+				</td>
+			</tr>
+			<tr><td><input type="radio" name="gender" value="male" checked> Male<br></td></tr>
+			<tr><td>
+					<textarea i18n="textArea" rows="4" cols="45"></textarea>
+			</td></tr>
+			<tr><td>
+				<input type="checkbox" value="Bike"> I have a bike<br>
+			</td></tr>
+			<tr>
+				<td>
+					<div style="color:blue" i18n="successTxt"></div>
+					<div style="color:red" i18n="errorTxt"></div>
+				</td>
+			</tr>
 		</table>
     </div>
+	<form>
+		<br /><br /><input type="text" i18n="tdTxt" i18n_placeholder="inputPlchdr" />
+		<br /><br /><input type="text" i18n_placeholder="inputPlchdr" />
+		<br /><br /><input type="text" i18n="spanTxt" />
+	</form>
 </body>
 </html>
