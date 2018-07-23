@@ -1,6 +1,7 @@
 # jQuery-saral-i18n
-i18n easy Implementation using jQuery
-Note- this is very easy plugin for localization using jQuery. You need to spen only 5 minute to setup and ready to go.
+<b>i18n easy Implementation using jQuery<b><br/>
+	
+<i>Note- this is very easy plugin for localization using jQuery. You need to spen only 5 minute to setup and ready to go.</i>
 
 <h3>How to setup</h3>
 <ul>
