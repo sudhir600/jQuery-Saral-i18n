@@ -1,0 +1,23 @@
+{
+  "name": "jQuery_saral_i18n",
+  "version": "1.0.0",
+  "description": "i18n easy Implementation using jQuery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudhir600/jQuery-Saral-i18n.git"
+  },
+  "keywords": ["i18n"],
+  "author": "Sudhir K Gupta",
+  "license": "ISC",
+  "devDependencies" : {
+    "jQuery": "^3.3.1"
+  },
+  "bugs": {
+    "url": "https://github.com/sudhir600/jQuery-Saral-i18n/issues"
+  },
+  "homepage": "https://github.com/sudhir600/jQuery-Saral-i18n#readme"
+}
