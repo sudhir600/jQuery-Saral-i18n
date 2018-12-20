@@ -1,11 +1,11 @@
 # jQuery-saral-i18n
 <b>i18n easy Implementation using jQuery</b> &nbsp; &nbsp;  <a href="https://github.com/sudhir600/jQuery-Saral-i18n" /><small>Github</small></a><br/>
-	
+<b>https://www.npmjs.com/package/jquery_saral_i18n</b>	
 <i>Note- this is very easy plugin for localization using jQuery. You need to spend only 5 minute to setup and ready to go.</i>
 
 <h3>How To Setup</h3>
 <ul>
- <li> Download saral-i18n.js under js folder.</li>
+ <li> Download saral-i18n.js under js folder. or run - <code>npm i jquery_saral_i18n</code> </li>
  <li> Paste this script file in your project directory (problily in "js" or "script" folder).</li>
  <li> Go to your html page wheere you want to impliment. add this script into <code><head></code> section.</li>
  <li> Go to your project directory and create a folder called "locale". and inside  locale, create en.json. (you can copy the locale folder from this repo.</li>
