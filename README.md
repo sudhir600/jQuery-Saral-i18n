@@ -1,6 +1,7 @@
 # jQuery-saral-i18n
-<b>i18n easy Implementation using jQuery</b> &nbsp; &nbsp;  <a href="https://github.com/sudhir600/jQuery-Saral-i18n" /><small>Github</small></a><br/>
-<b>https://www.npmjs.com/package/jquery_saral_i18n</b>	
+<b>i18n easy Implementation using jQuery</b> &nbsp; (<a href="https://github.com/sudhir600/jQuery-Saral-i18n" /><small>Github</small></a> or <a href="https://github.com/sudhir600/jQuery-Saral-i18n" />NPM</a>)<br/>
+
+<br />
 <i>Note- this is very easy plugin for localization using jQuery. You need to spend only 5 minute to setup and ready to go.</i>
 
 <h3>How To Setup</h3>
